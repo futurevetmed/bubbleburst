@@ -119,8 +119,8 @@ const methods = {
         data.spawnRate = 120;
       }
       else if(data.difficulty == 'hard'){
-        data.speed = .9;
-        data.spawnRate = 100;
+        data.speed = .7;
+        data.spawnRate = 95;
       }
     }, 1000);
   }
