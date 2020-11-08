@@ -17,7 +17,7 @@ class Bubble{
     this.y = window.innerHeight;
 
 
-    this.colors = ['blueviolet', 'cornflowerblue', 'cyan', 'alicbBlue', 'azure', 'blanchedalmond', 'lightgreen', 'lightseagreen', 'lightpink', 'lightskyblue', 'palegreen', 'mediumpurple', 'mediumslateblue', 'powderblue', 'plum', 'lightyellow', 'linen'];
+    this.colors = ['blueviolet', 'cornflowerblue', 'cyan', 'aliceblue', 'azure', 'blanchedalmond', 'lightgreen', 'lightseagreen', 'lightpink', 'lightskyblue', 'palegreen', 'mediumpurple', 'mediumslateblue', 'powderblue', 'plum', 'lightyellow', 'linen'];
     this.color = this.colors[Math.floor(Math.random() * this.colors.length)];
   }
 
