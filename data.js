@@ -13,7 +13,7 @@ const questionData = [
     image: 'https://i.pinimg.com/originals/71/a9/f9/71a9f9a357c5d2a06704cf895dd8548b.jpg', //vet exam room
     text: '',
     answer: 'V',
-  }
+  },
  {
     image: 'https://www.tenspros.com/assets/images/carex-apex-digital-oral-thermometer-70033b-1.jpg', //thermometer
     text: '',
