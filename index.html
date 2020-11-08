@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Bubble Burst!</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta content="width=device-width,initial-scale=1,minimal-ui" name="viewport">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/vue-material.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material/dist/theme/default.css">
+  </head>
+  <body>
+    <div id="app" class="column fullscreen">
+      <div id="menu" class="fullscreen column" v-if="!running">
+        <div class="md-title">
+          BUBBLE BURST!
+        </div>
+        <md-field id="difficulty-selector">
+          <label for="difficulty">difficulty</label>
+          <md-select v-model="difficulty" name="difficulty">
+            <md-option v-for="difficulty in difficulties" :value="difficulty">{{difficulty}}</md-option>
+          </md-select>
+        </md-field>
+        <md-button class="md-primary md-raised" @click="startGame()">START</md-button>
+      </div>
+      <div v-if="running" id="time-div">
+        {{timeLeft}}
+      </div>
+      <bubble
+        v-for="(bubble, index) in bubbles"
+        @click="bubble.expand()"
+        :x="bubble.x"
+        :y="bubble.y"
+        :r="bubble.radius"
+        :c="bubble.color"
+        :cb="bubble.expand"
+        :b="bubble"
+        :i="index"
+        :running="running"
+      ></bubble>
+      <div class="fullscreen column" id="results-screen" v-if="done">
+        <div class="md-title">
+          Congrats you popped {{bubblesPopped}} bubbles!
+        </div>
+        <md-button class="md-primary md-raised" @click="window.location.href = window.location.href">play again</md-button>
+      </div>
+      <div id="rem"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12"></script>
+    <script src="https://unpkg.com/vue-material"></script>
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,85 @@
+.fullscreen{
+  width: 100vw !important;
+  height: 100vh !important;
+  position: fixed;
+  top: 0px !important;
+  left: 0px !important;
+}
+
+.bubble{
+  position: fixed;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.bubble-running{
+  /* transition: width .25s, height .25s; */
+}
+
+.bubble-active{
+  /* border-radius: 0px !important; */
+  z-index: 2;
+  transition: all 0s;
+  top: 0% !important;
+  left: 0% !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  border-radius: 0px;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.row > * {
+  width: 2px !important;
+}
+
+.bubble-image{
+  max-width:75vw;
+  max-height:75vh;
+}
+
+#menu{
+  z-index: 3;
+}
+
+#rem{
+  width: 1rem;
+  height: 1rem;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
+#app{
+  background-color: lightblue;
+}
+
+#difficulty-selector{
+  width: 15rem;
+}
+
+#time-div{
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+
+#results-screen{
+  z-index: 3;
+  background-color: cornflowerblue;
+}
