@@ -111,15 +111,15 @@ const methods = {
 
     setTimeout(function(){
       if(data.difficulty == 'easy'){
-        data.speed = .3;
+        data.speed = .5;
         data.spawnRate = 130;
       }
       else if(data.difficulty == 'medium'){
-        data.speed = .7;
+        data.speed = .9;
         data.spawnRate = 100;
       }
       else if(data.difficulty == 'hard'){
-        data.speed = 1.2;
+        data.speed = 1.3;
         data.spawnRate = 80;
       }
     }, 1000);
