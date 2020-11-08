@@ -21,7 +21,7 @@ const questionData = [
   },
  {
     image: '',
-    text: 'I can't always help my patients',
+    text: "I can't always help my patients",
     answer: 'B',
   },
  {
