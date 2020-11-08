@@ -17,7 +17,7 @@ class Bubble{
     this.y = window.innerHeight;
 
 
-    this.colors = ['yellow', 'blueviolet', 'cornflowerblue', 'cyan'];
+    this.colors = ['blueviolet', 'cornflowerblue', 'cyan', 'alicbBlue', 'azure', 'blanchedalmond', 'lightgreen', 'lightseagreen', 'lightpink', 'lightskyblue', 'mediumpurple', 'mediumslateblue', 'powderblue', 'plum', 'lightyellow', 'linen'];
     this.color = this.colors[Math.floor(Math.random() * this.colors.length)];
   }
 
@@ -111,16 +111,16 @@ const methods = {
 
     setTimeout(function(){
       if(data.difficulty == 'easy'){
-        data.speed = .5;
-        data.spawnRate = 100;
+        data.speed = .3;
+        data.spawnRate = 130;
       }
       else if(data.difficulty == 'medium'){
-        data.speed = 1;
-        data.spawnRate = 75;
+        data.speed = .7;
+        data.spawnRate = 100;
       }
       else if(data.difficulty == 'hard'){
-        data.speed = 1.5;
-        data.spawnRate = 50;
+        data.speed = 1.2;
+        data.spawnRate = 80;
       }
     }, 1000);
   }
