@@ -98,7 +98,7 @@ const data = {
   running: false,
   difficulty: 'easy',
   difficulties: ['easy', 'medium', 'hard'],
-  timeLeft: 60,
+  timeLeft: 90,
   done: false,
   bubblesPopped: 0,
 }
