@@ -91,7 +91,7 @@ const questionData = [
   },
  {
     image: '',
-    text: 'my work is difficult workd',
+    text: 'my work is very difficult',
     answer: 'B',
   },
  {
