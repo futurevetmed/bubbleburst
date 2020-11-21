@@ -103,5 +103,10 @@ const questionData = [
     image: 'https://media.istockphoto.com/vectors/rod-of-asclepius-pharmacy-black-vector-icon-vector-id1209726881?k=6&m=1209726881&s=170667a&w=0&h=c6ZOjhjJGkV0rJqQRzW_y08UyZnom-jE7B1h2dN6f-A=',
     text: '',
     answer: 'B',
+  },
+  {
+    image: '',
+    text: 'Plenty of people with my training work in the food inspection idustry',
+    answer: 'V',
   }
 ]
